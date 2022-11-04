@@ -1,7 +1,7 @@
 import os
 import cv2
 
-# video = 24:18, cmd 6:1 => 48*3:18,
+# video = 24:18, cmd 6:1 => 48*3:18
 vid = cv2.VideoCapture(input("Enter the name of the video(bad_apple.mp4): "))
 dsize1 = tuple(([int(x) for x in input("Enter the width and height(144 22): ").split()]))
 grayscale_str1 = " `.-':_,^=;><+!rc*/z?sLTv)J7(|Fi{C}fI31tlu[neoZ5Yxjya]2ESwqkP6h9d4VpOGbUAKXHm8RD#$Bg0MNWQ%&@"
