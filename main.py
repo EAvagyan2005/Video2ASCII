@@ -2,7 +2,10 @@ import os
 import cv2
 
 # video = 24:18, cmd 6:1 => 48*3:18
-vid = cv2.VideoCapture(input("Enter the name of the video(bad_apple.mp4): "))
+
+cam_or_vid = input("Enter the name of the video(bad_apple.mp4)")
+cam_or_vid = int(cam_or_vid) if cam_or_vid.isdigit() else cam_or_vid
+vid = cv2.VideoCapture(cam_or_vid)
 dsize1 = tuple(([int(x) for x in input("Enter the width and height(144 22): ").split()]))
 grayscale_str1 = " `.-':_,^=;><+!rc*/z?sLTv)J7(|Fi{C}fI31tlu[neoZ5Yxjya]2ESwqkP6h9d4VpOGbUAKXHm8RD#$Bg0MNWQ%&@"
 grayscale_str = " .,:ilwW"
